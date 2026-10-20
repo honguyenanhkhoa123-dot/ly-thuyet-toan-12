@@ -38,12 +38,20 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
 - **Chương 1 — đủ 2 bài** (Lớp 10):
   1. Bất phương trình bậc nhất hai ẩn
   2. Hệ bất phương trình bậc nhất hai ẩn
+- **Chương 3 — đủ 2 bài** (Lớp 11):
+  1. Dãy số
+  2. Cấp số cộng và cấp số nhân
 - **Chương 5 — đủ 5 bài** (Lớp 11–12):
   1. Đạo hàm
   2. Tính đơn điệu và cực trị của hàm số
   3. Giá trị lớn nhất, giá trị nhỏ nhất của hàm số
   4. Đường tiệm cận của đồ thị hàm số
   5. Khảo sát sự biến thiên và vẽ đồ thị hàm số
+- **Chương 9 — đủ 1 bài** (Lớp 10):
+  1. Ba đường conic
+- **Chương 11 — đủ 2 bài** (Lớp 12):
+  1. Vectơ trong không gian
+  2. Tọa độ của vectơ trong không gian
 
 Các bài còn lại đang tiếp tục biên soạn từ cùng tài liệu nguồn, hiển thị trạng thái “đang biên soạn”/“sắp mở”.
 
