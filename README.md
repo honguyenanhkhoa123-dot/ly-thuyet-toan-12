@@ -47,6 +47,10 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
   3. Giá trị lớn nhất, giá trị nhỏ nhất của hàm số
   4. Đường tiệm cận của đồ thị hàm số
   5. Khảo sát sự biến thiên và vẽ đồ thị hàm số
+- **Chương 8 — đủ 3 bài** (Lớp 10–12):
+  1. Đại số tổ hợp
+  2. Biến cố và định nghĩa cổ điển của xác suất
+  3. Xác suất có điều kiện
 - **Chương 9 — đủ 1 bài** (Lớp 10):
   1. Ba đường conic
 - **Chương 11 — đủ 2 bài** (Lớp 12):
