@@ -43,13 +43,19 @@ export function Header() {
         <nav className="ml-auto hidden items-center gap-1 sm:flex" aria-label="Chính">
           <Link
             to="/"
-            className="rounded-md px-3 py-2 text-[0.85rem] font-medium text-[var(--ink-soft)] transition-colors hover:bg-[var(--surface-2)] hover:text-[var(--ink)]"
+            aria-current={location.pathname === '/' ? 'page' : undefined}
+            className={`rounded-md px-3 py-2 text-[0.85rem] font-medium transition-colors hover:bg-[var(--surface-2)] hover:text-[var(--ink)] ${
+              location.pathname === '/' ? 'text-[var(--ink)]' : 'text-[var(--ink-soft)]'
+            }`}
           >
             Trang chủ
           </Link>
           <Link
             to="/chuong/chuong-1"
-            className="rounded-md px-3 py-2 text-[0.85rem] font-medium text-[var(--ink-soft)] transition-colors hover:bg-[var(--surface-2)] hover:text-[var(--ink)]"
+            aria-current={location.pathname.startsWith('/chuong') ? 'true' : undefined}
+            className={`rounded-md px-3 py-2 text-[0.85rem] font-medium transition-colors hover:bg-[var(--surface-2)] hover:text-[var(--ink)] ${
+              location.pathname.startsWith('/chuong') ? 'text-[var(--ink)]' : 'text-[var(--ink-soft)]'
+            }`}
           >
             Chương 1
           </Link>
@@ -88,6 +94,7 @@ export function Header() {
                 <li key={ch.id}>
                   <Link
                     to={`/chuong/${ch.id}`}
+                    onClick={() => setOpen(false)}
                     className="flex items-center gap-3 rounded-md px-2 py-2.5 text-[0.9rem] text-[var(--ink-soft)] hover:bg-[var(--surface-2)]"
                   >
                     <span className="num w-5 shrink-0 text-[0.75rem] text-[var(--ink-faint)]">
