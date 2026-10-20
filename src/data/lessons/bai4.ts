@@ -2,7 +2,7 @@ import type { Lesson } from '../types'
 
 export const bai4: Lesson = {
   id: 'bai-4',
-  chapterId: 'chuong-1',
+  chapterId: 'chuong-5',
   title: 'Khảo sát sự biến thiên và vẽ đồ thị hàm số',
   summary: 'Sơ đồ khảo sát, các dạng đồ thị quen thuộc và bài toán tương giao.',
   minutes: 30,

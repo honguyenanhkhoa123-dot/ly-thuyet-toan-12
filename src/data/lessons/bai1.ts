@@ -2,7 +2,7 @@ import type { Lesson } from '../types'
 
 export const bai1: Lesson = {
   id: 'bai-1',
-  chapterId: 'chuong-1',
+  chapterId: 'chuong-5',
   title: 'Tính đơn điệu và cực trị của hàm số',
   summary: 'Đồng biến, nghịch biến, dấu của đạo hàm và hai quy tắc tìm cực trị.',
   minutes: 25,

@@ -1,13 +1,14 @@
-# Lý thuyết Toán 12 — Ôn thi THPT 2026–2027
+# Lý thuyết Toán THPT — Ôn thi tốt nghiệp 2026–2027
 
-Website học lý thuyết Toán 12 dạng tóm tắt, có công thức Toán render bằng KaTeX, ví dụ có lời giải, bài tập tự luyện, trắc nghiệm, câu hỏi đúng/sai và trả lời ngắn.
+Website ôn thi tốt nghiệp THPTQG dạng tóm tắt lý thuyết, có công thức Toán render bằng KaTeX, ví dụ có lời giải, bài tập tự luyện, trắc nghiệm, câu hỏi đúng/sai và trả lời ngắn.
 
-Nội dung biên soạn theo tài liệu **HV12H – Tóm tắt lý thuyết ôn thi TN THPT 2026–2027** (bản PDF/DOCX của tác giả), trình bày lại theo cấu trúc bài học trên web.
+Nội dung biên soạn **duy nhất** theo tài liệu **HV12H – Tóm tắt lý thuyết ôn thi TN THPT 2026–2027** (bản PDF/DOCX của tác giả). Mục lục 12 chương trên web bám đúng mục lục của tài liệu, phủ đủ 3 khối 10–11–12; phần nào chưa biên soạn xong được ghi rõ “đang biên soạn”.
 
 ## Tính năng
 
 - **KaTeX** cho mọi công thức: không còn LaTeX thô, không `**bold**` hay `<br>` lẫn trong nội dung; công thức dài tự cuộn ngang.
-- **Bố cục 3 phần**: header (logo + tên môn + menu), sidebar danh sách chương/bài, vùng nội dung chính, footer.
+- **Bố cục**: header (logo + tên môn + menu), sidebar danh sách chương/bài, vùng nội dung chính, footer.
+- **Lọc theo khối lớp** ở trang chủ: Tất cả · Lớp 10 · Lớp 11 · Lớp 12.
 - **Tab bài học**: Lý thuyết · Ví dụ · Bài tập · Trắc nghiệm · Đáp án.
 - **Bài tập tương tác**: chọn đáp án trắc nghiệm, đúng/sai từng ý, nhập đáp án ngắn; chấm điểm ngay và lưu tiến độ.
 - **Tiến độ học tập** lưu trong `localStorage` (đã học, đã hoàn thành, điểm trắc nghiệm).
@@ -17,14 +18,36 @@ Nội dung biên soạn theo tài liệu **HV12H – Tóm tắt lý thuyết ôn
 
 ## Nội dung hiện có
 
-- **Chương 1 — Ứng dụng đạo hàm để khảo sát hàm số**: đủ **4 bài**
-  1. Tính đơn điệu và cực trị của hàm số
-  2. Giá trị lớn nhất, giá trị nhỏ nhất của hàm số
-  3. Đường tiệm cận của đồ thị hàm số
-  4. Khảo sát sự biến thiên và vẽ đồ thị hàm số
-- **Chương 2–6** đã có mục lục và số bài theo chương trình Toán 12 (CT 2018), nội dung đang tiếp tục biên soạn (trạng thái “đang biên soạn”).
+Mục lục 12 chương theo đúng tài liệu HV12H:
 
-Mỗi bài Chương 1 gồm: lý thuyết trọng tâm, ví dụ mẫu có lời giải, 6 bài tập tự luyện (có gợi ý và lời giải), 8 câu trắc nghiệm, 3 câu đúng/sai (4 ý mỗi câu), 4 câu trả lời ngắn và bảng đáp án.
+1. Hệ bất phương trình bậc nhất hai ẩn — **Lớp 10**
+2. Phương trình lượng giác — **Lớp 11**
+3. Dãy số. Cấp số cộng và cấp số nhân — **Lớp 11**
+4. Hàm số mũ và hàm số logarit — **Lớp 11**
+5. Đạo hàm và ứng dụng của đạo hàm — **Lớp 11–12**
+6. Nguyên hàm và tích phân — **Lớp 12**
+7. Thống kê — **Lớp 10–11**
+8. Tổ hợp – Xác suất — **Lớp 10–12**
+9. Phương pháp tọa độ trong mặt phẳng — **Lớp 10**
+10. Hình học không gian — **Lớp 11**
+11. Vectơ và hệ tọa độ trong không gian — **Lớp 12**
+12. Tọa độ trong không gian — **Lớp 12**
+
+Đã biên soạn:
+
+- **Chương 1 — đủ 2 bài** (Lớp 10):
+  1. Bất phương trình bậc nhất hai ẩn
+  2. Hệ bất phương trình bậc nhất hai ẩn
+- **Chương 5 — đủ 5 bài** (Lớp 11–12):
+  1. Đạo hàm
+  2. Tính đơn điệu và cực trị của hàm số
+  3. Giá trị lớn nhất, giá trị nhỏ nhất của hàm số
+  4. Đường tiệm cận của đồ thị hàm số
+  5. Khảo sát sự biến thiên và vẽ đồ thị hàm số
+
+Các bài còn lại đang tiếp tục biên soạn từ cùng tài liệu nguồn, hiển thị trạng thái “đang biên soạn”/“sắp mở”.
+
+Mỗi bài đã mở gồm: lý thuyết trọng tâm, ví dụ mẫu có lời giải, bài tập tự luyện (có gợi ý và lời giải), trắc nghiệm, đúng/sai (4 ý mỗi câu), trả lời ngắn và bảng đáp án.
 
 ## Công nghệ
 
@@ -59,8 +82,8 @@ src/
     theory/      TheoryBlock, ExampleCard, GraphFigure, VariationTable
     ui/          Icon
   data/
-    chapters.ts  Danh mục 6 chương + trạng thái bài
-    lessons/     Nội dung Chương 1 (bai1–bai4.ts)
+    chapters.ts  Mục lục 12 chương + khối lớp + trạng thái bài
+    lessons/     Nội dung các bài đã biên soạn
   lib/
     markdown.tsx Pipeline markdown + KaTeX
     texSafe.ts   Chuẩn hoá công thức, chống lỗi tiếng Việt
@@ -74,8 +97,12 @@ src/
 - Công thức được viết lại bằng LaTeX và kiểm tra hiển thị trên cả desktop lẫn mobile.
 - Phần lý thuyết bám sát cấu trúc và ký hiệu của tài liệu gốc; các ví dụ/bài tập được chọn lọc theo đúng phạm vi từng bài.
 - Bảng biến thiên dùng bảng HTML responsive; đồ thị dùng SVG nên không bị mờ khi phóng to.
+- Phiên bản KaTeX của CSS và bộ render được giữ đồng nhất (0.16.x) để các ký hiệu như `≠` hiển thị đúng.
 - Nếu phát hiện sai sót về nội dung, có thể sửa trực tiếp trong `src/data/lessons/*.ts` (mỗi bài là một file dữ liệu có kiểu).
 
 ## Triển khai
 
 Repo đã cấu hình `vercel.json` cho Vite SPA. Trên Vercel chỉ cần import repo, giữ nguyên build command `npm run build` và output directory `dist`.
+
+- GitHub: https://github.com/honguyenanhkhoa123-dot/ly-thuyet-toan-12
+- Vercel: https://toan12-hv.vercel.app

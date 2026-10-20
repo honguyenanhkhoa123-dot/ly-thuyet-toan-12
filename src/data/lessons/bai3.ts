@@ -2,7 +2,7 @@ import type { Lesson } from '../types'
 
 export const bai3: Lesson = {
   id: 'bai-3',
-  chapterId: 'chuong-1',
+  chapterId: 'chuong-5',
   title: 'Đường tiệm cận của đồ thị hàm số',
   summary: 'Tiệm cận ngang, tiệm cận đứng và tiệm cận xiên của đồ thị.',
   minutes: 20,

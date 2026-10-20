@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const SUFFIX = 'Lý thuyết Toán 12 — Ôn thi THPT 2026–2027'
+const SUFFIX = 'Lý thuyết Toán THPT — Ôn thi tốt nghiệp 2026–2027'
 
 export function useTitle(title?: string) {
   useEffect(() => {

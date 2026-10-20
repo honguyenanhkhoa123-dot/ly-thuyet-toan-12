@@ -115,6 +115,8 @@ export interface Chapter {
   shortTitle: string
   description: string
   icon: ChapterIcon
+  /** Các khối lớp mà nội dung chương phủ (10, 11, 12). */
+  grades: number[]
   lessons: LessonMeta[]
   ready: boolean
 }

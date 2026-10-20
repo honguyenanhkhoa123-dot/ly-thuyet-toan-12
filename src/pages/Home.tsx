@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { chapters } from '../data/chapters'
 import { useProgress } from '../lib/progress'
@@ -89,6 +90,7 @@ function HeroGraph() {
 function ChapterTile({ chapter }: { chapter: (typeof chapters)[number] }) {
   const { progress } = useProgress()
   const total = chapter.lessons.length
+  const readyCount = chapter.lessons.filter(l => l.ready).length
   const done = chapter.lessons.filter(l => progress.completed.includes(`${chapter.id}/${l.id}`)).length
   const pct = total ? (done / total) * 100 : 0
 
@@ -114,12 +116,16 @@ function ChapterTile({ chapter }: { chapter: (typeof chapters)[number] }) {
       </h3>
       <p className="mt-1.5 text-[0.82rem] leading-relaxed text-[var(--ink-muted)]">{chapter.description}</p>
 
-      <div className="mt-3.5 flex items-center gap-2 text-[0.72rem] text-[var(--ink-faint)]">
+      <div className="mt-3.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.72rem] text-[var(--ink-faint)]">
+        <span className="font-medium text-[var(--ink-soft)]">Lớp {chapter.grades.join(' · ')}</span>
+        <span aria-hidden="true">·</span>
         <span>{total} bài</span>
         {chapter.ready ? (
           <>
             <span aria-hidden="true">·</span>
-            <span className="text-[var(--blue-deep)]">{done > 0 ? `đã học ${done}/${total}` : 'sẵn sàng'}</span>
+            <span className="text-[var(--blue-deep)]">
+              {readyCount < total ? `đã mở ${readyCount}/${total} bài` : done > 0 ? `đã học ${done}/${total}` : 'sẵn sàng'}
+            </span>
           </>
         ) : (
           <>
@@ -158,9 +164,18 @@ function ChapterTile({ chapter }: { chapter: (typeof chapters)[number] }) {
   )
 }
 
+const gradeFilters = [
+  { value: 0 as const, label: 'Tất cả' },
+  { value: 10 as const, label: 'Lớp 10' },
+  { value: 11 as const, label: 'Lớp 11' },
+  { value: 12 as const, label: 'Lớp 12' },
+]
+
 export function Home() {
   const { progress } = useProgress()
   useTitle()
+  const [grade, setGrade] = useState<0 | 10 | 11 | 12>(0)
+  const visibleChapters = grade === 0 ? chapters : chapters.filter(ch => ch.grades.includes(grade))
   const allLessons = chapters.flatMap(c => c.lessons.filter(l => l.ready).map(l => `${c.id}/${l.id}`))
   const done = allLessons.filter(k => progress.completed.includes(k)).length
   const pct = allLessons.length ? Math.round((done / allLessons.length) * 100) : 0
@@ -173,16 +188,17 @@ export function Home() {
           <div className="hero-copy">
             <p className="eyebrow mb-3 flex items-center gap-2">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--amber)]" />
-              Ôn thi tốt nghiệp THPT 2026–2027
+              Ôn thi tốt nghiệp THPTQG 2026–2027
             </p>
             <h1 className="display text-[2.15rem] text-[var(--ink)] sm:text-[2.9rem] lg:text-[3.35rem]">
-              Lý thuyết Toán 12,
+              Lý thuyết Toán,
               <br />
               viết lại cho dễ học.
             </h1>
-            <p className="mt-5 max-w-[46ch] font-[var(--font-read)] text-[1.02rem] leading-[1.75] text-[var(--ink-muted)] sm:text-[1.07rem]">
-              Bám sát bộ tài liệu <span className="text-[var(--ink-soft)]">HV12H — Tóm tắt lý thuyết ôn thi TN THPT</span>.
-              Mỗi bài gồm lý thuyết, ví dụ có lời giải, bài tập tự luyện và ba dạng câu hỏi thi.
+            <p className="mt-5 max-w-[48ch] font-[var(--font-read)] text-[1.02rem] leading-[1.75] text-[var(--ink-muted)] sm:text-[1.07rem]">
+              Bám sát bộ tài liệu <span className="text-[var(--ink-soft)]">HV12H — Tóm tắt lý thuyết ôn thi TN THPT</span>,
+              phủ đủ <span className="text-[var(--ink-soft)]">3 khối 10–11–12</span>. Mỗi bài gồm lý thuyết, ví dụ có lời giải,
+              bài tập tự luyện và ba dạng câu hỏi thi.
             </p>
 
             <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -204,11 +220,11 @@ export function Home() {
             <dl className="mt-8 flex flex-wrap items-baseline gap-x-7 gap-y-3 border-t border-[var(--rule)] pt-5 text-[0.8rem]">
               <div className="flex items-baseline gap-2">
                 <dt className="text-[var(--ink-muted)]">Chương</dt>
-                <dd className="num font-semibold text-[var(--ink)]">06</dd>
+                <dd className="num font-semibold text-[var(--ink)]">12</dd>
               </div>
               <div className="flex items-baseline gap-2">
                 <dt className="text-[var(--ink-muted)]">Bài đã mở</dt>
-                <dd className="num font-semibold text-[var(--ink)]">04</dd>
+                <dd className="num font-semibold text-[var(--ink)]">{String(allLessons.length).padStart(2, '0')}</dd>
               </div>
               <div className="flex items-baseline gap-2">
                 <dt className="text-[var(--ink-muted)]">Tiến độ của bạn</dt>
@@ -224,11 +240,12 @@ export function Home() {
       </section>
 
       <section id="muc-luc" className="mx-auto max-w-[1180px] scroll-mt-20 px-4 py-12 sm:px-6 sm:py-16">
-        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="display text-[1.5rem] text-[var(--ink)] sm:text-[1.75rem]">Mục lục</h2>
-            <p className="mt-1.5 text-[0.86rem] text-[var(--ink-muted)]">
-              Sáu chương của chương trình Toán 12. Chương 1 đã có đủ bốn bài.
+            <h2 className="display text-[1.5rem] text-[var(--ink)] sm:text-[1.75rem]">Mục lục 12 chương</h2>
+            <p className="mt-1.5 max-w-[64ch] text-[0.86rem] leading-relaxed text-[var(--ink-muted)]">
+              Theo đúng mục lục tài liệu HV12H, phủ đủ 3 khối 10–11–12. Nội dung được mở lần lượt từ nguồn;
+              chương nào chưa biên soạn xong sẽ hiển thị “đang biên soạn”.
             </p>
           </div>
           <p className="text-[0.76rem] text-[var(--ink-faint)]">
@@ -236,8 +253,29 @@ export function Home() {
           </p>
         </div>
 
+        <div className="mb-5 flex flex-wrap items-center gap-1.5" role="group" aria-label="Lọc chương theo khối lớp">
+          {gradeFilters.map(f => (
+            <button
+              key={f.value}
+              type="button"
+              onClick={() => setGrade(f.value)}
+              aria-pressed={grade === f.value}
+              className={`rounded-full border px-3 py-1.5 text-[0.76rem] font-medium transition-colors ${
+                grade === f.value
+                  ? 'border-[var(--primary)] bg-[var(--primary)] text-[var(--on-primary)]'
+                  : 'border-[var(--rule-strong)] text-[var(--ink-muted)] hover:border-[var(--ink-muted)] hover:text-[var(--ink)]'
+              }`}
+            >
+              {f.label}
+            </button>
+          ))}
+          <span className="ml-1 text-[0.72rem] text-[var(--ink-faint)]">
+            {visibleChapters.length} chương
+          </span>
+        </div>
+
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {chapters.map(ch => (
+          {visibleChapters.map(ch => (
             <ChapterTile key={ch.id} chapter={ch} />
           ))}
         </div>

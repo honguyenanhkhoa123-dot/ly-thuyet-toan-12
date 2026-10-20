@@ -40,6 +40,10 @@ export function ChapterPage() {
           {chapter.description}
         </p>
 
+        <p className="mt-3 inline-flex rounded-full border border-[var(--rule)] bg-[var(--surface-2)] px-2.5 py-1 text-[0.72rem] font-medium text-[var(--ink-soft)]">
+          Lớp {chapter.grades.join(' · ')}
+        </p>
+
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.78rem] text-[var(--ink-muted)]">
           <span className="flex items-center gap-1.5">
             <Icon name="book" size={14} />
@@ -62,7 +66,7 @@ export function ChapterPage() {
 
       {!chapter.ready && (
         <p className="mt-6 rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--surface)] px-4 py-3 text-[0.85rem] leading-relaxed text-[var(--ink-muted)]">
-          Chương này đang được biên soạn. Danh sách bài bên dưới là khung nội dung theo chương trình, sẽ mở lần lượt.
+          Chương này đang được biên soạn từ tài liệu HV12H. Danh sách bài bên dưới bám đúng mục lục nguồn và sẽ mở lần lượt.
         </p>
       )}
 

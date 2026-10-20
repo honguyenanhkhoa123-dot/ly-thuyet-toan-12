@@ -13,6 +13,10 @@ export function Footer() {
             Chương 1
           </Link>
           <span aria-hidden="true" className="text-[var(--rule-strong)]">/</span>
+          <a href="/#muc-luc" className="hover:text-[var(--ink)]">
+            Mục lục
+          </a>
+          <span aria-hidden="true" className="text-[var(--rule-strong)]">/</span>
           <span>Toán thầy Nghĩa</span>
         </div>
       </div>

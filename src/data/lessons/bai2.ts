@@ -2,7 +2,7 @@ import type { Lesson } from '../types'
 
 export const bai2: Lesson = {
   id: 'bai-2',
-  chapterId: 'chuong-1',
+  chapterId: 'chuong-5',
   title: 'Giá trị lớn nhất, giá trị nhỏ nhất của hàm số',
   summary: 'Tìm max – min trên đoạn, trên khoảng và các bài toán tham số.',
   minutes: 22,
