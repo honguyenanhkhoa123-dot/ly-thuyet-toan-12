@@ -5,6 +5,10 @@ import { bai3 } from './bai3'
 import { bai4 } from './bai4'
 import { chuong1Bai1 } from './chuong1-bai1'
 import { chuong1Bai2 } from './chuong1-bai2'
+import { chuong2Bai1 } from './chuong2-bai1'
+import { chuong2Bai2 } from './chuong2-bai2'
+import { chuong2Bai3 } from './chuong2-bai3'
+import { chuong2Bai4 } from './chuong2-bai4'
 import { chuong3Bai1 } from './chuong3-bai1'
 import { chuong3Bai2 } from './chuong3-bai2'
 import { chuong4Bai1 } from './chuong4-bai1'
@@ -25,6 +29,10 @@ import { chuong11Bai2 } from './chuong11-bai2'
 const all: Lesson[] = [
   chuong1Bai1,
   chuong1Bai2,
+  chuong2Bai1,
+  chuong2Bai2,
+  chuong2Bai3,
+  chuong2Bai4,
   chuong3Bai1,
   chuong3Bai2,
   chuong4Bai1,

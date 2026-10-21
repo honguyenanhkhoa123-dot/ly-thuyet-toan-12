@@ -38,6 +38,11 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
 - **Chương 1 — đủ 2 bài** (Lớp 10):
   1. Bất phương trình bậc nhất hai ẩn
   2. Hệ bất phương trình bậc nhất hai ẩn
+- **Chương 2 — đủ 4 bài** (Lớp 11):
+  1. Giá trị lượng giác của góc lượng giác
+  2. Công thức lượng giác
+  3. Hàm số lượng giác
+  4. Phương trình lượng giác cơ bản
 - **Chương 3 — đủ 2 bài** (Lớp 11):
   1. Dãy số
   2. Cấp số cộng và cấp số nhân
