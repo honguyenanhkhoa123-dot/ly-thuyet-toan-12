@@ -71,6 +71,11 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
   3. Xác suất có điều kiện
 - **Chương 9 — đủ 1 bài** (Lớp 10):
   1. Ba đường conic
+- **Chương 10 — đủ 4 bài** (Lớp 11):
+  1. Quan hệ song song trong không gian
+  2. Quan hệ vuông góc trong không gian
+  3. Góc và khoảng cách trong không gian
+  4. Thể tích của khối đa diện
 - **Chương 11 — đủ 2 bài** (Lớp 12):
   1. Vectơ trong không gian
   2. Tọa độ của vectơ trong không gian
