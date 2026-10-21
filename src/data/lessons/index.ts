@@ -32,6 +32,12 @@ import { chuong10Bai3 } from './chuong10-bai3'
 import { chuong10Bai4 } from './chuong10-bai4'
 import { chuong11Bai1 } from './chuong11-bai1'
 import { chuong11Bai2 } from './chuong11-bai2'
+import { chuong12Bai1 } from './chuong12-bai1'
+import { chuong12Bai2 } from './chuong12-bai2'
+import { chuong12Bai3 } from './chuong12-bai3'
+import { chuong12Bai4 } from './chuong12-bai4'
+import { chuong12Bai5 } from './chuong12-bai5'
+import { chuong12Bai6 } from './chuong12-bai6'
 
 const all: Lesson[] = [
   chuong1Bai1,
@@ -63,6 +69,12 @@ const all: Lesson[] = [
   chuong10Bai4,
   chuong11Bai1,
   chuong11Bai2,
+  chuong12Bai1,
+  chuong12Bai2,
+  chuong12Bai3,
+  chuong12Bai4,
+  chuong12Bai5,
+  chuong12Bai6,
   bai1,
   bai2,
   bai3,

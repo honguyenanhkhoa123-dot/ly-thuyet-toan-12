@@ -80,6 +80,14 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
   1. Vectơ trong không gian
   2. Tọa độ của vectơ trong không gian
 
+- **Chương 12 — đủ 6 bài** (Lớp 12):
+  1. Phương trình mặt phẳng
+  2. Phương trình đường thẳng trong không gian
+  3. Công thức tính góc trong không gian
+  4. Phương trình mặt cầu
+  5. Một số bài toán cực trị trong hình không gian
+  6. Phương pháp tọa độ hóa hình không gian
+
 Các bài còn lại đang tiếp tục biên soạn từ cùng tài liệu nguồn, hiển thị trạng thái “đang biên soạn”/“sắp mở”.
 
 Mỗi bài đã mở gồm: lý thuyết trọng tâm, ví dụ mẫu có lời giải, bài tập tự luyện (có gợi ý và lời giải), trắc nghiệm, đúng/sai (4 ý mỗi câu), trả lời ngắn và bảng đáp án.
