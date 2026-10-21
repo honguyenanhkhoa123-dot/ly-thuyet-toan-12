@@ -58,6 +58,10 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
   3. Giá trị lớn nhất, giá trị nhỏ nhất của hàm số
   4. Đường tiệm cận của đồ thị hàm số
   5. Khảo sát sự biến thiên và vẽ đồ thị hàm số
+- **Chương 6 — đủ 3 bài** (Lớp 12):
+  1. Nguyên hàm
+  2. Tích phân
+  3. Ứng dụng hình học của tích phân
 - **Chương 7 — đủ 2 bài** (Lớp 10–11):
   1. Các đặc trưng của mẫu số liệu không ghép nhóm
   2. Các đặc trưng của mẫu số liệu ghép nhóm

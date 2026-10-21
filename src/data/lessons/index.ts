@@ -17,6 +17,9 @@ import { chuong4Bai3 } from './chuong4-bai3'
 import { chuong4Bai4 } from './chuong4-bai4'
 import { chuong4Bai5 } from './chuong4-bai5'
 import { chuong5DaoHam } from './chuong5-dao-ham'
+import { chuong6Bai1 } from './chuong6-bai1'
+import { chuong6Bai2 } from './chuong6-bai2'
+import { chuong6Bai3 } from './chuong6-bai3'
 import { chuong7Bai1 } from './chuong7-bai1'
 import { chuong7Bai2 } from './chuong7-bai2'
 import { chuong8Bai1 } from './chuong8-bai1'
@@ -41,6 +44,9 @@ const all: Lesson[] = [
   chuong4Bai4,
   chuong4Bai5,
   chuong5DaoHam,
+  chuong6Bai1,
+  chuong6Bai2,
+  chuong6Bai3,
   chuong7Bai1,
   chuong7Bai2,
   chuong8Bai1,
