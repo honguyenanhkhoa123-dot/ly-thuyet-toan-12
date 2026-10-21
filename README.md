@@ -41,6 +41,12 @@ Mục lục 12 chương theo đúng tài liệu HV12H:
 - **Chương 3 — đủ 2 bài** (Lớp 11):
   1. Dãy số
   2. Cấp số cộng và cấp số nhân
+- **Chương 4 — đủ 5 bài** (Lớp 11):
+  1. Lũy thừa với số mũ thực
+  2. Logarit
+  3. Hàm số mũ và hàm số logarit
+  4. Bài toán lãi suất – tăng trưởng
+  5. Phương trình, bất phương trình mũ và logarit
 - **Chương 5 — đủ 5 bài** (Lớp 11–12):
   1. Đạo hàm
   2. Tính đơn điệu và cực trị của hàm số
